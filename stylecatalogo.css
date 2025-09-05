@@ -3,10 +3,20 @@
 *{
     margin: 0;
     box-sizing: border-box;
-    background-color: black;
     font-family: Roboto;
     color: #ffffff;
+    text-decoration: none;
 }
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #000000;
+}
+
+
 
 header{
     display: flex;
@@ -14,7 +24,7 @@ header{
     align-items: center;
     flex-direction: row;
     width: 100%;
-    height: 6rem;
+    height: 7rem;
 }
 
 #logo{
@@ -23,6 +33,11 @@ header{
     align-items: center;
     padding: 2rem;
     width: 20%;
+}
+
+#logo > img{
+    height: 120px;
+    padding-left: 2rem;
 }
 
 #catalogonav{
@@ -35,6 +50,17 @@ header{
     width: 70%;
 }
 
+#catalogonav > a{
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+
+
+#catalogonav > a:hover{
+    background: linear-gradient(to right, #1E90FF, #39FF14)
+}
+
 #extra{
     display: flex;
     justify-content: center;
@@ -43,4 +69,31 @@ header{
     column-gap: 3rem;
     padding-left: 5rem;
     width: 30%;
+}
+
+#extra > a{
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+#extra > a:hover{
+    background: linear-gradient(to right, #1E90FF, #39FF14)
+}
+
+#seccion1{
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #ff0000, #006900, #0000ff)
+}
+
+#background{
+    height: 96%;
+    width: 99%;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
 }
