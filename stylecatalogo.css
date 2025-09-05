@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Gidole&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libertinus+Serif+Display&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gidole&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libertinus+Serif+Display&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
     margin: 0;
@@ -86,7 +87,8 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to right, #ff0000, #006900, #0000ff)
+    background: linear-gradient(to right, #ff0000, #006900, #0000ff);
+    margin-bottom: 2rem;
 }
 
 #background{
@@ -96,4 +98,77 @@ header{
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 15px;
+}
+
+#seccion2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+#categoria{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    column-gap: .8rem;
+    width: 20%;
+}
+
+#productos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    width: 80%;
+}
+
+.producto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    width: 260px;
+    height: 80vh;
+    border: solid #39FF14 2px;
+    border-radius: 15px;
+}
+
+.productolink{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 260px;
+}
+
+.nombreprod{
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.productolink{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.productolink > img{
+    width: 250px;
+    padding-bottom: 1rem;
+}
+
+.descripcion{
+    color: #D3D3D3;
+    text-align: center;
 }
