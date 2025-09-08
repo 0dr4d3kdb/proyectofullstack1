@@ -67,12 +67,18 @@ header{
     padding: 1rem;
     border-radius: 5px;
     font-family: Orbitron;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 
 
-#catalogonav > a:hover{
+/*#catalogonav > a:hover{
     background: linear-gradient(to right, #1E90FF, #39FF14)
+}*/
+
+#catalogonav > a:hover{
+    background: linear-gradient(to right, #1E90FF, #39FF14);
+    transform: scale(1.05);
 }
 
 #extra{
@@ -89,6 +95,12 @@ header{
     padding: 1rem;
     border-radius: 5px;
     font-family: Orbitron;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#extra > a:hover {
+    background-color: var(--accent-green);
+    transform: scale(1.05);
 }
 
 #extra > a:hover{
@@ -120,6 +132,8 @@ header{
     align-items: flex-start;
     flex-direction: row;
     width: 100%;
+    border-bottom: solid #39FF14 2px;
+    padding-bottom: 5rem;
 }
 
 #categoria{
@@ -152,9 +166,15 @@ header{
     row-gap: 2rem;
     width: 260px;
     height: 90vh;
-    border: solid #39FF14 2px;
+    border: solid #39FF14 1px;
     border-radius: 15px;
     padding-top: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.producto:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(57, 255, 20, 0.3);
 }
 
 .productolink{
@@ -222,4 +242,12 @@ header{
   align-items: flex-start; 
   gap: 0.5rem;        
   width: 100%;  
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid var(--accent-green);
+    color: var(--secondary-text-color);
+    margin-top: 8px;
 }
