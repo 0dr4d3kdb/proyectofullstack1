@@ -1,0 +1,119 @@
+
+
+body {
+  font-family: var(--font-principal);
+  background: url("https://raw.githubusercontent.com/0dr4d3kdb/proyectofullstack1/a998f004585f2377fc7ea88e2dae116bd8ee0fb2/background.jpg") 
+              no-repeat center center fixed;
+  background-size: cover;
+  color: var(--primary-text-color);
+  line-height: 1.6;
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.form-card {
+  background-color: #1a1a1a;
+  border: 2px solid var(--accent-green);
+  border-radius: 15px;
+  padding: 30px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0px 8px 20px rgba(30, 144, 255, 0.2);
+  text-align: center;
+}
+
+.form-card h2 {
+  font-family: var(--font-encabezado);
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: var(--accent-blue);
+  text-shadow: 0px 0px 8px rgba(30, 144, 255, 0.6);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+  color: var(--secondary-text-color);
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--accent-blue);
+  border-radius: 8px;
+  background-color: #0b0b0b;
+  color: var(--primary-text-color);
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: var(--accent-green);
+  box-shadow: 0px 0px 8px rgba(57, 255, 20, 0.6);
+}
+
+.form-btn {
+  background: linear-gradient(to right, var(--accent-blue), var(--accent-green));
+  border: none;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.form-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 15px rgba(57, 255, 20, 0.5);
+}
+
+.switch-form {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: var(--secondary-text-color);
+}
+
+.switch-form a {
+  color: var(--accent-blue);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.switch-form a:hover {
+  color: var(--accent-green);
+}
+.input-error {
+  display: block;
+  color: #ff6b6b;
+  font-size: 0.85rem;
+  margin-top: 6px;
+}
+
+.input-invalid {
+  box-shadow: 0 0 0 4px rgba(255,107,107,0.08);
+  border-color: #ff6b6b !important;
+}
