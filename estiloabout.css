@@ -146,15 +146,14 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
 }
 
-#texto{
+.texto{
     display: flex;
     justify-content: center;
     width: 50%;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 1rem;
 }
 
 #foto{
@@ -164,11 +163,22 @@ header{
     border: 1px#39FF14 solid;
 }
 
+#ubicacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+#ubicacion>p{
+    padding: 1rem;
+}
+
 #ubicacion>iframe{
     width: 600px;
     height: 450px;
-    border: 1px#39FF14 solid;
-    flex-direction: column;  
+    border: 1px#39FF14 solid;  
 }
 
 .footer {
