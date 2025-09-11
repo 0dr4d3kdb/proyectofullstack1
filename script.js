@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       if (!ok) return;
-      window.location.href = "index.html";
+      window.location.href = "perfil.html";
     });
   }
 

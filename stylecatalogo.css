@@ -40,17 +40,41 @@ header{
     height: 7rem;
 }
 
-#logo{
+#logo a {
     display: flex;
-    justify-content: flex-start;
     align-items: center;
-    padding: 2rem;
-    width: 20%;
+    border-radius: 10px;
+    transition: box-shadow 0.2s;
 }
 
-#logo > img{
+#logo a:active {
+    box-shadow: 0 0 10px var(--accent-blue);
+    transform: scale(0.97);
+}
+
+#logo img {
     height: 110px;
-    padding-left: 2rem;
+    width: auto;
+    max-width: 220px;
+    padding-left: 0;
+    transition: transform 0.2s;
+}
+.logo-link {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    text-decoration: none;
+
+}
+
+.logo-text {
+    color: #39FF14;
+    font-family: Orbitron, sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
 }
 
 #catalogonav{
@@ -120,7 +144,7 @@ header{
 #background{
     height: 96%;
     width: 99%;
-    background-image: url('background.jpg');
+    background-image: url('imagenes/background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 15px;
@@ -307,9 +331,57 @@ header{
 }
 
 .footer {
+    width: 100vw;
+    left: 0;
+    position: relative;
+    background: linear-gradient(to right, #1E90FF 60%, #39FF14 100%);
+    color: #fff;
+    padding: 30px 0 10px 0;
+    margin-top: 50px;
+    font-family: 'Roboto', sans-serif;
+    border-top: none;
+    box-sizing: border-box;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 40px;
+    box-sizing: border-box;
+    gap: 2rem;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.footer-social {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-social img {
+    filter: drop-shadow(0 0 4px #000);
+    transition: transform 0.2s;
+}
+
+.footer-social a:hover img {
+    transform: scale(1.15);
+}
+
+.footer-copy {
     text-align: center;
-    padding: 20px;
-    border-top: 2px solid var(--accent-green);
-    color: var(--secondary-text-color);
-    margin-top: 8px;
+    color: #222;
+    font-size: 1rem;
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.8;
 }
